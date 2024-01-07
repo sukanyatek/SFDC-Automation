@@ -1,0 +1,67 @@
+2024-01-04-14:44:06 INFO  Report Configuration started.
+2024-01-04-14:44:06 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-14:44:06 INFO  AccountsTest:preCondition():Beginning
+2024-01-04-14:44:11 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-14:44:15 INFO  AccountsTest:preCondition():Ending
+2024-01-04-14:44:15 INFO  AccountsTest:createAccountReport_TC14:
+2024-01-04-14:44:17 INFO  AccountsPage:verifyAccountsPage:
+2024-01-04-14:44:19 INFO  AccountsPage:createAccountReport:
+2024-01-04-14:44:21 INFO  AccountsPage:selectReportOptions:
+2024-01-04-14:44:22 INFO  AccountsPage:saveReport:
+2024-01-04-14:44:47 INFO  AccountsTest:preCondition():Beginning
+2024-01-04-14:44:48 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-14:44:54 INFO  AccountsTest:preCondition():Ending
+2024-01-04-14:44:54 INFO  AccountsTest:mergeAccounts_TC13:
+2024-01-04-14:44:54 INFO  AccountsPage:verifyAccountsPage:
+2024-01-04-14:44:55 INFO  AccountsPage:verifyAccountsSelectedToMerge:
+2024-01-04-14:45:01 INFO  AccountsPage:verifyMergeAccounts:
+2024-01-04-14:45:01 INFO  BaseTest:completion(): After Suite completed.
+2024-01-04-17:04:27 INFO  BaseTest:Report Configuration started.
+2024-01-04-17:04:27 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-17:04:30 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-17:04:30 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-17:04:30 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-17:04:44 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-17:04:44 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-17:05:46 INFO  BaseTest:completion(): After Suite completed.
+2024-01-04-21:27:14 INFO  BaseTest:Report Configuration started.
+2024-01-04-21:27:14 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-21:27:16 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:27:16 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:27:16 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:27:27 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:27:28 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:27:37 INFO  BaseTest:completion(): After Suite completed.
+2024-01-04-21:33:28 INFO  BaseTest:Report Configuration started.
+2024-01-04-21:33:28 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-21:33:30 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:33:30 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:33:30 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:33:39 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:33:41 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:33:50 INFO  BaseTest:completion(): After Suite completed.
+2024-01-04-21:39:42 INFO  BaseTest:Report Configuration started.
+2024-01-04-21:39:42 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-21:39:44 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:39:56 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:40:04 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:40:13 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:40:21 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-21:40:29 INFO  BaseTest:completion(): After Suite completed.
+2024-01-04-23:00:52 INFO  BaseTest:Report Configuration started.
+2024-01-04-23:00:52 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-23:00:52 INFO  AccountsTest:preCondition():Beginning
+2024-01-04-23:00:53 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-23:01:00 INFO  AccountsTest:preCondition():Ending
+2024-01-04-23:01:00 INFO  AccountsTest:createAccountReport_TC14:
+2024-01-04-23:01:00 INFO  AccountsPage:verifyAccountsPage:
+2024-01-04-23:01:01 INFO  AccountsPage:createAccountReport:
+2024-01-04-23:01:04 INFO  AccountsPage:selectReportOptions:
+2024-01-04-23:01:04 INFO  AccountsPage:saveReport:
+2024-01-04-23:14:21 INFO  BaseTest:Report Configuration started.
+2024-01-04-23:14:22 INFO  BaseTest:configuration(): Report Configuration completed.
+2024-01-04-23:14:22 INFO  AccountsTest:preCondition():Beginning
+2024-01-04-23:14:23 INFO  BaseTest:configuretBrowserType:Chrome browser is configured
+2024-01-04-23:14:29 INFO  AccountsTest:preCondition():Ending
+2024-01-04-23:14:29 INFO  AccountsTest:createAccountReport_TC14:
+2024-01-04-23:14:30 INFO  BaseTest:completion(): After Suite completed.
