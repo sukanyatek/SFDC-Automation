@@ -19,7 +19,7 @@ public class UserMenuTest extends BaseTest {
 	@BeforeMethod
 	public void preCondition() throws IOException {
 		
-		driver = BaseTest.configuretBrowserType(FileUtils.getLoginTestData("browsertype"));
+		driver = BaseTest.configureBrowserType(FileUtils.getLoginTestData("browsertype"));
 		LoginPage lp = new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_TIME);
 		lp.loginToApp(driver);

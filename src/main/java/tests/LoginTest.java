@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
 	@Test (enabled = true) 
 	public void loginError_TC01() throws IOException{
 		
-		driver = BaseTest.configuretBrowserType(FileUtils.getLoginTestData("browsertype"));
+		driver = BaseTest.configureBrowserType(FileUtils.getLoginTestData("browsertype"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_TIME);
 		LoginPage lp = new LoginPage(driver);
 		lp.launchApp(driver);
@@ -39,7 +39,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test (enabled = true) 
 	public void loginToSFDC_TC02() throws IOException {
-		driver = BaseTest.configuretBrowserType(FileUtils.getLoginTestData("browsertype"));
+		driver = BaseTest.configureBrowserType(FileUtils.getLoginTestData("browsertype"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_TIME);
 		LoginPage lp = new LoginPage(driver);
 		lp.launchApp(driver);
@@ -53,7 +53,7 @@ public class LoginTest extends BaseTest {
 	@Test (enabled = true) //fail
 	//reloading of login page - not waiting even with implicit wait. worked with sleep.
 	public void checkRememberMe_TC03() throws IOException, InterruptedException {
-		driver = BaseTest.configuretBrowserType(FileUtils.getLoginTestData("browsertype"));
+		driver = BaseTest.configureBrowserType(FileUtils.getLoginTestData("browsertype"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_TIME);
 		LoginPage lp = new LoginPage(driver);
 		UserMenuPage ump = new UserMenuPage(driver);
@@ -76,7 +76,7 @@ public class LoginTest extends BaseTest {
 	@Test (enabled = true)  
 	public void forgotPassword_TC04A() throws IOException, InterruptedException {
 			
-		driver = BaseTest.configuretBrowserType(FileUtils.getLoginTestData("browsertype"));
+		driver = BaseTest.configureBrowserType(FileUtils.getLoginTestData("browsertype"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_TIME);
 		LoginPage lp = new LoginPage(driver);
 		lp.launchApp(driver);
@@ -92,7 +92,7 @@ public class LoginTest extends BaseTest {
 	@Test (enabled = true)
 	public void validateLoginErrorMessage_TC04B() throws IOException, InterruptedException {
 			
-		driver = BaseTest.configuretBrowserType(FileUtils.getLoginTestData("browsertype"));
+		driver = BaseTest.configureBrowserType(FileUtils.getLoginTestData("browsertype"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_TIME);
 		LoginPage lp = new LoginPage(driver);
 		lp.launchApp(driver);

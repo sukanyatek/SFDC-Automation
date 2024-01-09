@@ -30,9 +30,10 @@ public class BaseTest {
 	//public static WebDriver driver;
 	static Logger logger = LogManager.getLogger();
 	private static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
+	public static ThreadLocal<ExtentTest> threadLocalTest = new ThreadLocal<ExtentTest>();
 	
 	public static void setDriver(String browserName) {
-		WebDriver driver = BaseTest.configuretBrowserType(browserName);
+		WebDriver driver = BaseTest.configureBrowserType(browserName);
 		threadLocalDriver.set(driver);
 	}
 	
@@ -40,10 +41,15 @@ public class BaseTest {
 		return threadLocalDriver.get();
 	}
 	
+	public static ExtentTest getTest() {
+		return threadLocalTest.get();
+	}
+	
 	@AfterMethod
 	public static void removeDriver() {
 		BaseTest.getDriver().close();
 		threadLocalDriver.remove();
+		threadLocalTest.remove();
 	}
 	
 	
@@ -67,7 +73,7 @@ public class BaseTest {
 	 * @param browserName eg: chrome, safari etc
 	 * @return Webdriver object
 	 */
-	public static WebDriver configuretBrowserType(String browserName) {
+	public static WebDriver configureBrowserType(String browserName) {
 		
 		String browser = browserName.toLowerCase();
 		
@@ -76,22 +82,22 @@ public class BaseTest {
 		switch(browser) {
 		case "chrome":
 			driver = new ChromeDriver();
-			logger.info("BaseTest:configuretBrowserType:Chrome browser is configured");
+			logger.info("BaseTest:configureBrowserType:Chrome browser is configured");
 			break;
 		case "safari":
 			driver = new SafariDriver();
-			logger.info("BaseTest:configuretBrowserType:Safari browser is configured");
+			logger.info("BaseTest:configureBrowserType:Safari browser is configured");
 			break;
 		case "firefox":
 			driver = new FirefoxDriver();
-			logger.info("BaseTest:configuretBrowserType:Firefox browser is configured");
+			logger.info("BaseTest:configureBrowserType:Firefox browser is configured");
 			break;
 		case "edge":
 			driver = new EdgeDriver();
-			logger.info("BaseTest:configuretBrowserType:Chrome browser is configured");
+			logger.info("BaseTest:configureBrowserType:Chrome browser is configured");
 		default:
 			driver = null;
-			logger.error("BaseTest:configuretBrowserType:Invalid browser");
+			logger.error("BaseTest:configureBrowserType:Invalid browser");
 			break;	
 		}
 		return driver;
