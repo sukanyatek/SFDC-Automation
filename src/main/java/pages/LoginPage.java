@@ -2,6 +2,7 @@ package pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -48,6 +49,12 @@ public class LoginPage extends BasePage {
 	
 	@FindBy(xpath="//*[@class='mb12']")
 	public WebElement checkYourEmailMessage;
+	
+	@FindBy(id = "userNavButton")
+	public WebElement userMenu;
+	
+	@FindBy(xpath= "//a[@title='Logout']")
+	public WebElement logoutOption;
 	
 	
 	/**Launch URL
@@ -248,4 +255,11 @@ public class LoginPage extends BasePage {
 		
 	}
 	
+	public void logoutOfApp(WebDriver driver) {
+		userMenu.click();
+		if(CommonUtils.waitForElement(driver, logoutOption)) {
+			logoutOption.click();
+		}
+		
+	}
 }

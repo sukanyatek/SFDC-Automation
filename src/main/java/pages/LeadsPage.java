@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utils.CommonUtils;
 import utils.FileUtils;
 
 public class LeadsPage extends BasePage {
@@ -21,6 +22,14 @@ public class LeadsPage extends BasePage {
 	
 	@FindBy(id = "fcf")
 	public WebElement leadsDropdown;
+	
+	@FindBy(xpath = "//*[@class='title']")
+	public WebElement leadsDropdownViewPage;
+	
+	@FindBy(xpath = "//input[@title='Go!']")
+	public WebElement leadsDropdownGoButton;
+	
+	
 	
 	public boolean selectLeadsTab(WebDriver driver) throws IOException {
 		boolean isLeadsHomepageDisplayed = false;
@@ -44,6 +53,24 @@ public class LeadsPage extends BasePage {
 		}
 		return allOptionsVerified;
 		
+	}
+	
+	public void selectLeadsDropdown(String option) {
+		leadsDropdown.click();
+		(new Select(leadsDropdown)).selectByVisibleText(option);
+	}
+	
+	public boolean verifyLeadsDropdownSelected(WebDriver driver, String option) {
+		boolean dropdownVerified = false;
+		if((new Select(leadsDropdown)).getFirstSelectedOption().getText().equals(option)) {
+			leadsDropdownGoButton.click();
+			if(CommonUtils.waitForElement(driver,leadsDropdownViewPage)) {
+				if((new Select(leadsDropdownViewPage)).getFirstSelectedOption().getText().equals(option)) {
+					dropdownVerified = true;
+				}	
+			}
+		}
+		return dropdownVerified;
 	}
 	
 	
